@@ -364,7 +364,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 0; /* Establece el canvas detrás de otros contenidos */
+  z-index: 0; 
 }
 
 .main-title {
@@ -376,7 +376,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2; /* Coloca el título sobre el canvas */
+  z-index: 2; 
 }
 
 .demo-1 .main-title {
@@ -389,10 +389,10 @@
   font-weight: 200;
 }
 
-/* Se asegura de que los otros componentes estén sobre el canvas */
+
 .componente-encima {
   position: relative;
-  z-index: 2; /* Asegura que esté sobre el canvas */
+  z-index: 2; 
 }
 
 @media only screen and (max-width : 768px) {
@@ -401,4 +401,4 @@
   }
 }
 
-/* Añade estilos adicionales si es necesario para otros elementos */
+
