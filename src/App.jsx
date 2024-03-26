@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Btn from './Btn';
 import Jaaziel from './Jaaziel';
-import { TweenLite, Circ } from 'gsap'; // Asegúrate de haber instalado GSAP
+import { TweenLite, Circ } from 'gsap'; 
 
 function App() {
   const canvasRef = useRef(null);
@@ -63,7 +63,6 @@ function App() {
         point.closest = closest;
       }
 
-      // Asignar un círculo a cada punto
       for (let point of points) {
         point.circle = new Circle(point, 2 + Math.random() * 2, 'rgba(255,255,255,0.3)');
       }
@@ -177,7 +176,6 @@ function App() {
       return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
 
-    // Cleanup
     return () => {
       window.removeEventListener('mousemove', mouseMove);
       window.removeEventListener('scroll', scrollCheck);
